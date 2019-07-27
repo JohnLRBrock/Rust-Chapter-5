@@ -5,6 +5,10 @@ struct Rectangle {
 }
 
 impl Rectangle {
+    fn constructor(length: u32) -> Rectangle {
+        Rectangle { width: length, height: length }
+    }
+
     fn area(&self) -> u32 {
         self.width * self.height
     }
